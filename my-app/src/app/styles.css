@@ -1,0 +1,306 @@
+body{
+    width:100%;
+    height:100%;
+    background-color: #3b82f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display:flex;
+    flex-direction: row;
+    height: 80px;
+    width:100%;
+    background-color: #fff;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    position: relative;
+}
+.headerImg{
+    border-radius:100%;
+    height: 40px; 
+    margin: 10px;
+}
+.headerTxt{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.descr{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.burger{
+    position: absolute;
+    left: 5vh;
+    height: 30px;
+    width: 30px;
+}
+
+.content{
+    padding: 20px;
+}
+
+.input>input{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: none;
+    overflow: hidden;
+}
+.input>input:focus{
+    border: none;
+    overflow: hidden;
+}
+
+.exampleContainer{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    max-width:992px;
+    margin: auto;
+}
+
+.exampleHeader{
+    font-weight: bold;
+    text-align: center;
+    font-size: 21px;
+    
+}
+.smContainer>img{
+    max-width:100%;
+
+}
+
+.smContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+    max-width: 700px;
+}
+
+
+
+
+
+
+
+
+
+  
+  .dropdown {
+    position: relative;
+    color: #333;
+    cursor: default;
+    margin-bottom: 20px;
+    max-width:100%;
+  }
+  
+  .dropdown .arrow {
+    border-color: #999 transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    content: " ";
+    display: block;
+    height: 0;
+    margin-top: 0.3rem;
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    width: 0;
+  }
+  
+  .dropdown .arrow.open {
+    border-color: transparent transparent #999;
+    border-width: 0 5px 5px;
+
+
+    
+    
+    
+  }
+  
+  .dropdown .selected-value input {
+    line-height: 1.5;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: default;
+    outline: none;
+    padding: 8px 52px 8px 10px;
+    transition: all 200ms ease;
+    width: 100%;
+    border-radius: 5px;
+    
+  }
+  
+  .dropdown .options {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    margin-top: -1px;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1000;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .dropdown .options.open {
+    display: block;
+  }
+  
+  .dropdown{
+    width:100%;
+  }
+  .dropdown .option {
+    box-sizing: border-box;
+    color: rgba(51, 51, 51, 0.8);
+    cursor: pointer;
+    display: block;
+    padding: 8px 10px;
+  }
+  
+  .dropdown .option.selected,
+  .dropdown .option:hover {
+    background-color: #f2f9fc;
+    color: #333;
+    
+    border-radius: 0;
+  }
+  
+  .inputDropdown{
+    background-color: #fff !important;
+  }
+  .inputContainer{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    max-width:992px;
+    margin: auto;
+  }
+  .dropdownContainer{
+    width:100%;
+  }
+  .dropDown{
+    width: 18%;
+    margin-right: 20px;
+  }
+  .dropDown>button{
+    width: 100%;
+    height: 100%; 
+  }
+  .dropDown>button{
+    width: 100%;
+    height: 100%; 
+  }
+  .dropDown>.dropdown-menu.show{
+    width:50px;
+  }
+  .dropDown>.dropdown-menu> .dropdown-item{
+    width:100%;
+  }
+  .tableContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr)); /* Два елементи в рядку */
+    grid-gap: 20px;
+}
+
+.tableContainer .sem {
+    width: 45%;    
+    margin-bottom: 20px;
+}
+
+
+  .h1{
+    font-size: 20px;
+  }
+  .sem{
+    width: 60%;
+    margin-right: 30px;
+  }
+  .head{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .table{
+    display: flex;
+
+    flex-direction: column;
+    width: 50%;
+  }
+  .line{
+    display: flex;
+    flex-direction: row;
+    border:1px solid black;
+}
+  .name {
+    margin-right: auto;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    
+  }
+  .marks{
+    padding: 5px 10px;
+    width: 30px;
+    border-left:1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  @media (max-width: 800px) {
+    .dropDown{
+        width: 30%;
+        margin-right: 15px;
+      }
+}
+@media (max-width: 575px) {
+    .inputContainer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок */
+        max-width: 992px;
+        margin: auto;
+    }
+    
+    .inputContainer > * {
+        flex-grow: 1; /* Дозволяє елементам займати доступний простір */
+        margin: 5px; /* Відступи між елементами */
+    }
+    
+    .inputContainer > :nth-child(-n+2) {
+        flex-basis: calc(50% - 10px); /* Перші два елементи займають половину ширини контейнера кожен */
+    }
+    
+
+
+
+    .tableContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Два елементи в рядку */
+        grid-gap: 20px;
+    }
+    
+    .tableContainer .sem {
+        width: 45%;    
+        margin-bottom: 20px;
+    }
+}
